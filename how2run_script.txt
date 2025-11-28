@@ -1,0 +1,70 @@
+How to Set Up and Run a Python Script with External Libraries Using a Virtual Environment on Mac (M1)
+
+Step 1: Open Terminal
+
+Open the Terminal app from Applications > Utilities or by searching "Terminal" in Spotlight.
+
+Step 2: Navigate to Your Project Folder
+
+Use the `cd` command to go to the folder where your Python script is located. For example:
+
+cd "/Users/arshiamajdi/Documents/MY_PERSONAL_PROJECTS/python project/Qrcode"
+
+Make sure the folder contains your `qr_code.py` file.
+
+Step 3: Create a Virtual Environment
+
+Run this command to create a virtual environment using Python 3.12:
+
+/opt/homebrew/opt/python@3.12/bin/python3.12 -m venv qr_env
+
+This creates a folder called `qr_env` that contains an isolated Python setup.
+
+Step 4: Activate the Virtual Environment
+
+Run this command to activate the virtual environment:
+
+source qr_env/bin/activate
+
+Your terminal prompt will now start with `(qr_env)` to indicate that the environment is active.
+
+Step 5: Install Required Libraries
+
+With the virtual environment active, install the necessary packages:
+
+pip install pyqrcode pypng
+
+This installs the `pyqrcode` and `pypng` libraries into your virtual environment.
+
+Step 6: Run the Python Script
+
+Now run your Python script:
+
+python qr_code.py
+
+If everything is set up correctly, the script will generate two files in your folder:
+
+- myqr.svg
+- myqr.png
+
+These files are the QR codes that the script created.
+
+Step 7: (Optional) Add Confirmation Output
+
+To make sure the script runs visibly, you can add this line at the end of `qr_code.py`:
+
+print("QR code generated successfully!")
+
+Then rerun the script:
+
+python qr_code.py
+
+You should see the message in the terminal.
+
+Step 8: Deactivate the Virtual Environment (Optional)
+
+When you’re done working, you can deactivate the environment by typing:
+
+deactivate
+
+This returns your terminal to the regular system Python environment.
