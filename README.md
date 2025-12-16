@@ -1,2 +1,2 @@
 ## Presentation Poster:
-[CQN_poster.pdf](https://github.com/user-attachments/files/24187687/CQN_poster.pdf)
+![Image](https://github.com/user-attachments/assets/8d965a98-778f-4b03-b5b5-b52ffe9ede9a)
